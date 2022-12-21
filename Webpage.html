@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <title>Traackr</title>
+    </head>
+    <style>
+        body{
+            background:radial-gradient(#00fafa,#0075fa);
+            color :rgb(0, 0, 0);
+        }
+        .btn1{
+            position: relative;
+            float : right;
+            color: rgb(0, 0, 0); 
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 15px;
+            border-width: 2px;
+            border-color:rgb(0, 0, 0);
+            font-size : 20px;
+            padding-left : 20px;
+            padding-right : 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top : 10px;
+            margin-left : 20px;
+            overflow: hidden;
+            transition: 1s all ease;
+        }
+ 
+        .btn1::before{
+            background-color:rgb(2, 102, 2);
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: -1;
+            transition: all 0.5s ease;
+        }           
+
+        .btn1::before{
+            width: 100%;
+            height: 0%;
+        }
+
+        .btn1:hover::before{
+            height: 100%;
+        }
+
+        .btn2{
+            position: relative;
+            color: #000000;
+            background-color: rgb(2, 102, 2,0.1);
+            border-radius: 40px;
+            border-color:rgb(0, 0, 0);
+            font-size : 18px;
+            padding-top : 20px;
+            padding-bottom : 20px;
+            padding-left : 60px;
+            padding-right : 60px;
+            margin-top : 35px;
+            margin-left : 100px;
+            overflow: hidden;
+            transition: 1s all ease;
+        }
+
+        .btn2::before{
+            background-color:rgb(2, 102, 2);
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: -1;
+            transition: all 0.5s ease;
+        }           
+
+        .btn2::before{
+            width: 100%;
+            height: 0%;
+        }
+
+        .btn2:hover::before{
+            height: 100%;
+        }
+
+        a.r{
+            color :rgb(22, 6, 247);
+            float : right;
+            font-size : 20px;
+            font-family: Geneva, Tahoma, sans-serif;
+            padding-top : 10px;
+            padding-left : 20px;
+            padding-right : 20px;
+            padding-bottom : 10px;
+            margin-top: 13px;
+            text-decoration : none;   
+            transition: all 0.7s ease-in-out;        
+        }
+
+        a:hover{
+            /* border : 1px solid rgb(2, 2, 2); */
+            border-radius: 50px;
+            overflow: hidden;
+            background-color : rgb(40, 97, 2);
+            color: rgb(7, 7, 7);
+        }
+        
+        div.name{
+            color :rgb(23, 246, 3);
+            font-family:'Comic Sans MS';
+            font-size : 40px;
+            text-shadow: 10px;
+            padding-left : 100px;
+            padding-top : 20px;
+            margin-right : 50px;
+        }
+
+        div.content1{
+            font-family:'cooper black';
+            font-size : 50px;
+            padding-left : 100px;
+            padding-top : 70px;
+        }
+
+        div.content2{
+            color: rgb(20, 20, 20);
+            font-family:'miriam';
+            font-size : 23px;
+            padding-left : 100px;
+            padding-top : 30px;
+        }
+
+        #x{
+            float:  right;
+            padding-top : 85px;
+            padding-right : 50px;
+        }
+
+        img{
+            opacity: 1;
+            transition: all 0.5s ease-in;        
+            
+        }
+        
+        img:hover{
+            opacity: 0.5;
+        }
+        
+    </style>
+    <body>
+        <header>
+            <nav>
+                <div class = "name"><b>Trackobar</b>
+                    <button class = "btn1">Talk To Us</button>
+                    <a class = "r" href = "login.html">Login</a>
+                    <a class = "r" href = "reg.html">Register</a>
+                    <a class = "r" href = "#">About Us</a>
+                    <a class = "r" href = "#">Resources</a>
+                    <a class = "r" href = "#">Customer</a>
+                    <a class = "r" href = "#">Product</a>
+                </div>    
+            </nav>
+        </header>
+        <aside id = "x">
+            <img  class = "imgh" src = "farm.png" height = "400px" width = "600px" />
+        </aside>
+        <aside>
+        <div class = "content1">
+                The Standard for</br>
+                Influencer Marketing    
+        </div>
+        <div class = "content2">
+            Traackr provides influencer discovery,vetting,relationship</br>
+            management,campaign organization,measurement,</br>
+            and the industry's only influencer market performance</br>
+            benchmark</br>
+        </div>
+    </aside>
+        
+        <div>
+            <button class = "btn2"><b>Discover Trackobar</b></button>
+        </div>
+    </body>
+</html>

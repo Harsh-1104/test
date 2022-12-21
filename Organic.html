@@ -1,0 +1,905 @@
+<html>
+
+<head>
+    <title>
+        Organic
+    </title>
+    <script src="https://kit.fontawesome.com/0d43257b1b.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width = device-width,initial-scale=1.0">
+    <link rel="icon" href="img/leaf.png">
+</head>
+<style>
+    .h2 {
+        transition: transform .2s ease;
+    }
+
+    .h2:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    .header {
+        /* border: 1px solid green; */
+        width: 100%;
+        height: 18%;
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        margin-left: 20px;
+        /* margin-top: 10px; */
+    }
+
+    .name {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        font-size: 60px;
+        margin-left: 110px;
+        margin-top: 30px;
+        color: #49a010;
+    }
+
+    .searchbox {
+        position: absolute;
+        height: 50px;
+        width: 30%;
+        left: 40%;
+        border: 2px solid #49a010;
+        margin-top: 40px;
+        font-size: 20px;
+        padding-left: 20px;
+        color: #49a010;
+    }
+
+    .search {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        background: #49a010;
+        padding-top: 10px;
+        padding-left: 10px;
+        right: 30%;
+        margin-top: 40px;
+    }
+
+    .searchbtn {
+        font-size: 25px;
+        color: #ffffff;
+        margin-top: 2px;
+        margin-left: 2px;
+    }
+
+    .like {
+        position: absolute;
+        top: 50px;
+        right: 5%;
+        font-size: 50px;
+        color: #49a010;
+    }
+
+    .cart {
+        position: absolute;
+        font-size: 50px;
+        top: 50px;
+        right: 15%;
+        color: #49a010;
+    }
+
+    .nav {
+        width: 100%;
+        height: 100px;
+        background: rgba(73, 160, 16, 0.7);
+    }
+
+    .btn {
+        float: left;
+        height: 39px;
+        width: 150px;
+        text-align: center;
+        padding-top: 12px;
+        margin-left: 100px;
+        margin-top: 25px;
+        font-size: 20px;
+        text-decoration: none;
+        background: #49a010;
+        box-shadow: inset 0px 0px 20px 1px #ffffff;
+        color: black;
+        font-weight: bold;
+        border-radius: 20px;
+    }
+
+    .homebtn {
+        box-shadow: inset 0px 0px 20px 1px #000000;
+    }
+
+    .advertismentimg {
+        width: 100%;
+        height: 550px;
+        opacity: 90%;
+    }
+
+    .adv {
+        margin-top: -470px;
+        position: absolute;
+        margin-left: 25%;
+        text-align: center;
+        height: 350px;
+        width: 50%;
+        border: 1px solid black;
+        border-radius: 0px 170px 0px 170px;
+        padding-top: 20px;
+        font-size: 50px;
+        background: rgba(255, 255, 255, 0.6);
+        font-family: monospace;
+    }
+
+    .shpbtn {
+        background: #49a010;
+        width: 200px;
+        height: 40px;
+        font-size: 30px;
+        margin-left: 250px;
+        margin-top: 40px;
+        padding-top: 5px;
+        border-radius: 0px 170px 0px 170px;
+        color: #ffffff;
+    }
+
+    .service {
+        width: 100%;
+        height: 500px;
+    }
+
+    .categories {
+        display: inline-table;
+        text-align: center;
+        background: rgba(73, 160, 16, 0.4);
+        height: 400px;
+        width: 100%;
+        font-size: 60px;
+    }
+
+    .cateimg1 {
+        /* position: relative; */
+        display: inline;
+        height: 270px;
+        width: 270px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cateimg2 {
+        /* position: relative; */
+        display: inline;
+        height: 270px;
+        width: 270px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cateimg3 {
+        /* position: relative; */
+        display: inline;
+        height: 270px;
+        width: 270px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cateimg4 {
+        /* position: relative; */
+        display: inline;
+        height: 270px;
+        width: 270px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .blog {
+        height: 500px;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        border: 1px dashed black;
+        font-size: 60px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+
+    .blogimg1 {
+        float: left;
+        margin-left: 60px;
+        height: 405px;
+        width: 50%;
+        border: 2px solid black;
+        cursor: pointer;
+    }
+
+    .blogimg2 {
+        height: 180px;
+        width: 35%;
+        margin-bottom: 40px;
+        border: 2px solid black;
+        cursor: pointer;
+    }
+
+    .contactnfollow {
+        background: rgba(73, 160, 16, 0.4);
+        height: 350px;
+        width: 100%;
+    }
+
+    .emailbox {
+        position: absolute;
+        height: 50px;
+        width: 30%;
+        left: 60px;
+        border: 2px solid #49a010;
+        margin-top: 150px;
+        font-size: 20px;
+        padding-left: 20px;
+        color: #49a010;
+    }
+
+    .sendbtn {
+        position: absolute;
+        height: 30px;
+        width: 10%;
+        left: 60px;
+        background: #49a010;
+        font-size: 25px;
+        margin-top: 250px;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .fb {
+        position: relative;
+        margin-left: 20px;
+    }
+
+    .twit {
+        position: relative;
+        margin-left: 20px;
+    }
+
+    .inst {
+        position: relative;
+        margin-left: 20px;
+    }
+
+    .fandc {
+        position: relative;
+        right: 100px;
+        width: 300px;
+        height: 300px;
+        text-align: right;
+    }
+
+    .footer {
+        text-align: center;
+        background: #49a010;
+        height: 50px;
+        padding-top: 10px;
+        font-size: 30px;
+        color: #ffffff;
+    }
+
+    .container1 {
+        display: inline-table;
+        width: 300px;
+        height: 300px;
+    }
+
+    .container2 {
+        display: inline-table;
+        width: 300px;
+        height: 300px;
+    }
+
+    .container3 {
+        display: inline-table;
+        width: 300px;
+        height: 300px;
+    }
+
+    .container4 {
+        display: inline-table;
+        width: 300px;
+        height: 300px;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        margin-top: -280px;
+        font-weight: bolder;
+    }
+
+    .container1:hover .cateimg1 {
+        opacity: 35%;
+        transform: scale(1.2);
+    }
+
+    .container1:hover .middle {
+        opacity: 1;
+    }
+
+    .container2:hover .cateimg2 {
+        opacity: 35%;
+        transform: scale(1.2);
+    }
+
+    .container2:hover .middle {
+        opacity: 1;
+    }
+
+    .container3:hover .cateimg3 {
+        opacity: 35%;
+        transform: scale(1.2);
+    }
+
+    .container3:hover .middle {
+        opacity: 1;
+    }
+
+    .container4:hover .cateimg4 {
+        opacity: 35%;
+        transform: scale(1.2);
+    }
+
+    .container4:hover .middle {
+        opacity: 1;
+    }
+
+    .text {
+        color: #000000;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+
+    .notification .badge {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: -10px;
+        right: -10px;
+        border-radius: 100%;
+        background-color: rgb(255, 0, 0);
+        color: #ffffff;
+        font-size: 21px;
+        text-align: center;
+    }
+
+
+    @media (max-width:786px) {
+        .header {
+            width: 100%;
+            height: 20%;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            position: absolute;
+            height: 70px;
+            width: 70px;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        .name {
+            position: absolute;
+            height: 70px;
+            width: 70px;
+            font-size: 50px;
+            margin-left: 80px;
+            margin-top: 30px;
+            color: #49a010;
+        }
+
+        .searchbox {
+            position: absolute;
+            height: 40px;
+            width: 30%;
+            left: 40%;
+            border: 2px solid #49a010;
+            margin-top: 45px;
+            font-size: 20px;
+            padding-left: 20px;
+            color: #49a010;
+        }
+
+        .search {
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            background: #49a010;
+            margin-top: 45px;
+        }
+
+        .searchbtn {
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        .like {
+            position: absolute;
+            top: 53px;
+            right: 5%;
+            font-size: 40px;
+            color: #49a010;
+        }
+
+        .cart {
+            position: absolute;
+            font-size: 40px;
+            top: 53px;
+            right: 15%;
+            color: #49a010;
+        }
+
+        .nav {
+            width: 100%;
+            height: 80px;
+            background: rgba(73, 160, 16, 0.7);
+        }
+
+        .btn {
+            display: inline-block;
+            align-content: center;
+            height: 30px;
+            width: 100px;
+            text-align: center;
+            padding-top: 12px;
+            margin-left: 40px;
+            margin-top: 20px;
+            font-size: 15px;
+            text-decoration: none;
+            background: #49a010;
+            box-shadow: inset 0px 0px 20px 1px #ffffff;
+            color: black;
+            font-weight: bold;
+        }
+
+        .homebtn {
+            box-shadow: inset 0px 0px 20px 1px #000000;
+        }
+
+        .advertismentimg {
+            width: 100%;
+            height: 400px;
+            opacity: 90%;
+        }
+
+        .adv {
+            margin-top: -350px;
+            position: absolute;
+            margin-left: 25%;
+            text-align: center;
+            height: 250px;
+            width: 50%;
+            border: 1px solid black;
+            border-radius: 0px 150px 0px 150px;
+            padding-top: 15px;
+            font-size: 30px;
+            background: rgba(255, 255, 255, 0.6);
+            font-family: monospace;
+        }
+
+        .shpbtn {
+            background: #49a010;
+            width: 150px;
+            height: 25px;
+            font-size: 20px;
+            margin-left: 120px;
+            margin-top: 40px;
+            padding-top: 2px;
+            border-radius: 0px 150px 0px 150px;
+            color: #ffffff;
+        }
+
+        .service {
+            width: 100%;
+            height: 300px;
+        }
+
+        .categories {
+            text-align: center;
+            background: rgba(73, 160, 16, 0.4);
+            height: 300px;
+            width: 100%;
+            display: inline-block;
+        }
+
+        .cateimg {
+            height: 150px;
+            width: 150px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    @media (min-width:320px) and (max-width:425px) {
+        .header {
+            display: list-item;
+            width: 100%;
+            height: 35%;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            left: 20%;
+        }
+
+        .name {
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            font-size: 30px;
+            left: 15%;
+            margin-top: 40px;
+            color: #49a010;
+        }
+
+        .searchbox {
+            position: absolute;
+            height: 30px;
+            width: 60%;
+            left: 20%;
+            border: 2px solid #49a010;
+            margin-top: 90px;
+            font-size: 15px;
+            padding-left: 20px;
+            color: #49a010;
+        }
+
+        .search {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            background: #49a010;
+            margin-top: 90px;
+            left: 71%;
+        }
+
+        .searchbtn {
+            font-size: 15px;
+            color: #ffffff;
+            margin-top: -2px;
+            margin-left: -2px;
+        }
+
+        .like {
+            position: relative;
+            top: 70%;
+            left: 5%;
+            font-size: 40px;
+            color: #49a010;
+        }
+
+        .cart {
+            position: relative;
+            top: 70%;
+            left: 60%;
+            font-size: 40px;
+            color: #49a010;
+        }
+
+        .nav {
+            display: table-row;
+            width: 100%;
+            height: 80px;
+            background: rgba(73, 160, 16, 0.7);
+        }
+
+        .btn {
+            align-content: center;
+            height: 30px;
+            width: 100px;
+            text-align: center;
+            padding-top: 12px;
+            margin-left: 40px;
+            margin-top: 20px;
+            font-size: 15px;
+            text-decoration: none;
+            background: #49a010;
+            box-shadow: inset 0px 0px 20px 1px #ffffff;
+            color: black;
+            font-weight: bold;
+        }
+
+        .homebtn {
+            box-shadow: inset 0px 0px 20px 1px #000000;
+        }
+
+        .advertismentimg {
+            width: 100%;
+            height: 220px;
+            opacity: 90%;
+        }
+
+        .adv {
+            margin-top: -200px;
+            position: absolute;
+            margin-left: 12%;
+            text-align: center;
+            height: 150px;
+            width: 70%;
+            border: 1px solid black;
+            border-radius: 0px 90px 0px 90px;
+            padding-top: 15px;
+            font-size: 17px;
+            background: rgba(255, 255, 255, 0.6);
+            font-family: monospace;
+        }
+
+        .shpbtn {
+            background: #49a010;
+            width: 100px;
+            height: 20px;
+            font-size: 15px;
+            margin-left: 70px;
+            margin-top: 20px;
+            padding-top: 2px;
+            border-radius: 0px 150px 0px 150px;
+            color: #ffffff;
+        }
+
+        .service {
+            width: 100%;
+            height: 150px;
+        }
+
+        .categories {
+            text-align: center;
+            background: rgba(73, 160, 16, 0.4);
+            height: 250px;
+            width: 100%;
+            display: grid;
+            font-size: 25px;
+            padding-top: 20px;
+        }
+
+        .cateimg1 {
+            position: relative;
+            height: 100px;
+            width: 100px;
+            right: 20%;
+        }
+
+        .cateimg2 {
+            position: relative;
+            height: 100px;
+            width: 100px;
+            left: 25%;
+            bottom: 100%;
+        }
+
+        .cateimg3 {
+            position: relative;
+            height: 100px;
+            width: 100px;
+            right: 20%;
+            bottom: 490px;
+        }
+
+        .cateimg4 {
+            position: relative;
+            height: 100px;
+            width: 100px;
+            left: 25%;
+            bottom: 790px;
+        }
+
+        .blog {
+            height: 500px;
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+            border: 1px dashed black;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-top: 10px;
+            padding-bottom: 40px;
+        }
+
+        .blogimg1 {
+            margin-left: 60px;
+            height: 150px;
+            width: 60%;
+            border: 2px solid black;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .blogimg2 {
+            height: 150px;
+            width: 60%;
+            margin-bottom: 20px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+
+        .contactnfollow {
+            background: rgba(73, 160, 16, 0.4);
+            height: 350px;
+            width: 100%;
+        }
+
+        .emailbox {
+            position: absolute;
+            height: 50px;
+            width: 30%;
+            left: 60px;
+            border: 2px solid #49a010;
+            margin-top: 150px;
+            font-size: 20px;
+            padding-left: 20px;
+            color: #49a010;
+        }
+
+        .sendbtn {
+            position: absolute;
+            height: 30px;
+            width: 10%;
+            left: 60px;
+            background: #49a010;
+            font-size: 25px;
+            margin-top: 250px;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .fb {
+            position: relative;
+            left: 10px;
+        }
+
+        .twit {
+            position: relative;
+        }
+
+        .inst {
+            position: relative;
+        }
+
+        .fandc {
+            position: relative;
+            /* right: 100px; */
+            width: 300px;
+            height: 300px;
+            text-align: right;
+        }
+
+        .footer {
+            text-align: center;
+            background: #49a010;
+            height: 30px;
+            padding-top: 10px;
+            font-size: 20px;
+            color: #ffffff;
+        }
+    }
+</style>
+
+<body>
+    <div class="header">
+        <img class="logo" src="img/leaf.png" alt="leaf">
+        <div class="name">Organic</div>
+        <input type="text" class="searchbox" placeholder="Search">
+        <a class="search" href="#"><i class="fas fa-search searchbtn h2"></i></a>
+        <a class="cart notification" href="#">
+            <i class="fas fa-shopping-cart h2"></i>
+            <span class="badge">1</span>
+        </a>
+        <a class="like notification" href="#">
+            <i class="fas fa-heart h2"></i>
+            <span class="badge">2</span>
+        </a>
+    </div>
+    <div class="nav">
+        <a class="btn homebtn h2" href="@">Home</a>
+        <a class="btn h2" href="@">Product</a>
+        <a class="btn h2" href="@">Blog</a>
+        <a class="btn h2" href="@">About</a>
+        <a class="btn h2" href="@">Contact</a>
+    </div>
+    <div>
+        <img src="img/vegetablebg.png" class="advertismentimg">
+        <div class="adv">
+            <div style="color: #49a010; margin-bottom: 30px;">Organic Food</div>
+            Looking For<br>
+            The Fresh Organic Food
+            <div class="shpbtn h2">Shop Now</div>
+        </div>
+    </div>
+    <img src="img/Service.png" class="service">
+    <div class="categories">
+        <div style=>Top Categories</div>
+        <div class="container1">
+            <a href="#"><img class="cateimg1 h2 " src="img/Vegetables.png"></a>
+            <div class="middle">
+                <div class="text">Vegetables</div>
+            </div>
+        </div>
+        <div class="container2">
+            <a href="#"><img class="cateimg2 h2" src="img/Fruits.png"></a>
+            <div class="middle">
+                <div class="text">Fruits</div>
+            </div>
+        </div>
+        <div class="container3">
+            <a href="#"><img class="cateimg3 h2" src="img/Meats.png"></a>
+            <div class="middle">
+                <div class="text">Meats</div>
+            </div>
+        </div>
+        <div class="container4">
+            <a href="#"><img class="cateimg4 h2" src="img/Eggs.png"></a>
+            <div class="middle">
+                <div class="text">Eggs</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="blog">
+        <div style="padding-bottom: 10px;">Latest Blogs</div>
+        <div><img class="blogimg1" src="img/Blog2.png"></div>
+        <aside>
+            <div><img class="blogimg2" src="img/Blog1.png"></div>
+            <div><img class="blogimg2" src="img/Blog3.png"></div>
+        </aside>
+    </div>
+    <div class="contactnfollow">
+        <img style="padding-left: 20px;" class="logo" src="img/leaf.png" alt="leaf">
+        <div style="padding-left: 20px;" class="name">Organic</div>
+        <div style="float: left;"><input type="text" class="emailbox" placeholder="Enter Your Email"></div>
+        <div class="sendbtn h2" style="float: left">Send</div>
+        <aside style="float: right;">
+            <div class="fandc">
+                <div style=" font-size: 35px; font-family: sans-serif; margin-top: 20px;">Follow Us
+                    <div style="margin-top: 10px; margin-right: 10px;">
+                        <a href="#"><i style="color: #49a010;" class="fb fab fa-facebook-f h2"></i></a>
+                        <a href="#"><i style="color: #49a010;" class="twit fab fa-twitter h2"></i></a>
+                        <a href="#"><i style="color: #49a010;" class="inst fab fa-instagram h2"></i></a>
+                    </div>
+                </div>
+                <div style="font-size: 35px; font-family: sans-serif; margin-top: 70px;">Contact Us
+                    <div style="margin-right: 10px; margin-bottom: 10px;">
+                        <a href="#"><i style="color: #49a010;" class="fas fa-phone-alt h2"></i></a>
+                        <span style="font-size: 20px;">+91 90900 81542</span>
+                    </div>
+                    <div style="margin-right: 10px; margin-bottom: 10px;">
+                        <a href="#"><i style="color: #49a010;" class="fas fa-envelope h2"></i></a>
+                        <span style="font-size: 20px;">Organic@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <div class="footer">
+        &#169 &#128578 All Right Reserved | 2021-22
+    </div>
+</body>
+
+</html>
